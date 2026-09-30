@@ -9,7 +9,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
   * { box-sizing:border-box; }
-  body { margin:0; font-family:'Manrope',-apple-system,'Helvetica Neue',Arial,sans-serif; background:#FAFAF8; }
+  html, body { margin:0; padding:0; }
+  body {
+    font-family:'Manrope',-apple-system,'Helvetica Neue',Arial,sans-serif;
+    background:#dcd6cc;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    padding:0;
+  }
+  .rbu-frame {
+    width:100%;
+    max-width:1440px;
+    box-shadow:0 0 0 1px rgba(0,0,0,0.06), 0 8px 40px rgba(0,0,0,0.12);
+    overflow:hidden;
+  }
 
     body { margin:0; font-family: 'Manrope', -apple-system, 'Helvetica Neue', Arial, sans-serif; background:#fbeee7; color:#1A1A1A; -webkit-font-smoothing:antialiased; }
     a { text-decoration:none; }
@@ -39,6 +53,7 @@
 </style>
 </head>
 <body>
+<div class="rbu-frame">
 <div style="width:1440px; min-height:1400px; box-sizing:border-box; background:#fbeee7; position:relative; font-family:'Manrope',-apple-system,'Helvetica Neue',Arial,sans-serif;">
 
   <div style="background:#2a1a5e; padding:10px 24px;">
@@ -95,7 +110,7 @@
 </a><a href="kostnad.html" class="card-top" style="border-top-color:#6d28d9; text-decoration:none; color:inherit; display:block;">
   <h3 style="font-size:18px; color:#2a1a5e; font-weight:700; margin-bottom:8px;">Kostnadsöversikt</h3>
   <p style="font-size:14.5px; color:#5c554e; line-height:1.6;">Alla områdens kostnader samlade i en tabell.</p>
-</a><a href="avslutning.html" class="card-top" style="border-top-color:#b81e68; text-decoration:none; color:inherit; display:block;">
+</a><a href="avslutning.html" class="card-top" style="border-top-color:#b81e68; text-decoration:none; color:inherit; display:block; grid-column:1 / -1;">
   <h3 style="font-size:18px; color:#2a1a5e; font-weight:700; margin-bottom:8px;">Idébank</h3>
   <p style="font-size:14.5px; color:#5c554e; line-height:1.6;">Andra idéer värda att utforska, inte prioriterade i det här förslaget.</p>
 </a>
@@ -106,6 +121,7 @@
   </div>
 
 
+</div>
 </div>
 </body>
 </html>
